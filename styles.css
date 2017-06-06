@@ -1,0 +1,9 @@
+img {
+	height:100px;
+	width:100px;
+float:left;
+}
+.list-item{
+	margin-bottom:5px;
+	overflow:hidden;
+}
