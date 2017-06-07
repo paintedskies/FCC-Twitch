@@ -1,9 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i');
+body{
+	background-color:#ff3366;
+	transition: all ease-out 1s;
+}
+*{
+	font-family:'Open Sans', 'sans-serif';
+}
+
 img {
-	height:100px;
+	position: relative;
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 70px;
+}
+h1{
+	font-size:40px;
+	font-family:'Open Sans', 'sans-serif';
+	color:#fcfffd;
+}
+#nav {
+	padding-top:5px;
+	padding-bottom:20px;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top:20px;
+	background-color:#011627;
+	border-radius:10px;
+}
+
+#channel-list {
+	margin: 30px auto;
+	width: 92%;
+	position: relative;
+	text-align: center;
+}
+
+#nav button {
+	margin:0;
+	border-radius:15px;
+	font-size:15px;
+	cursor:pointer;
+	padding:5px;
+	color:#fdfffc;
 	width:100px;
-float:left;
+	border:2px solid;
+	display:inline-block;
+	transition:all ease-out 0.4s;
 }
-.list-item{
-	margin-bottom:5px;
+#nav #all{
+	margin: 0 100px;
+}
+
+.list-item {
+	background-color:#fdfffc;
+	text-overflow: ellipsis;
 	overflow:hidden;
+	padding:50px 20px;
+	border:2px none;
+	margin:15px 15px;
+	width:22%;
+	display:inline-block;
+	height:300px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius:6px;
+
 }
+hr{
+	border:0;
+	height: 2px;
+	background:#333;
+	background-image:linear-gradient(to right, #ccc,#aaa, #ccc);
+
+}
+.list-item h2 {
+	font-size: 24px;
+	font-style:'bold';
+	color:#555;
+}
+
+p:nth-child(1) {
+	font-size:14px;
+	color:#999;
+}
+.list-item > p{
+	margin-top:-10px;
+}
+.list-item a {
+	text-decoration:none;
+}
+#nav #online{
+	background-color:#ff3366;
+	border-color:#a32141;
+
+}
+#nav button:hover{
+	transform:scale(1.1);
+}
+#nav #online.active{
+	transform: scale(1.1);
+}
+.online > p {
+	color: #ff3366;
+}
+
+#nav #offline{
+	background-color: #20a4f3;
+	border-color:#1878b1;
+
+}
+
+#nav #offline.active{
+	transform:scale(1.1);
+}
+.offline > p {
+	color: #20a4f3;
+}
+#nav #all{
+	background-color:#e7e247;
+	border-color:#93902e;
+}
+
+#nav #all.active{
+	transform:scale(1.1);
+}
+
+.not-found > p {
+	color: #aaa;
+
+}
+
