@@ -54,7 +54,7 @@ function getdata(username, x)
 		if( (res.stream == null) && (x == "all" || x == "offline") )
 		{
 			$.ajax({
-				url: "https:/wind-bow.glitch.me/twitch-api/channels/"+username,
+				url: "https://wind-bow.glitch.me/twitch-api/channels/"+username,
 				method: "GET",
 				dataType: "jsonp"
 			})
